@@ -20,20 +20,23 @@
         <h1>AI Product Generator</h1>
       </header>
       <main>
-        <form id="product-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the name of the product"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
+        <div class="form-container">
+          <form id="product-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the name of the product"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
 
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="product" id="product"></div>
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Beauty, Health and Wellness</div>
+        </div>
+        <div class="product hidden" id="product"></div>
       </main>
 
       <footer>

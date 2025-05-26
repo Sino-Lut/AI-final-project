@@ -9,10 +9,7 @@ h1 {
   text-align: center;
 }
 form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  margin-bottom: 30px;
+  display: flex;
 }
 .container {
   margin: 120px auto;
@@ -50,4 +47,33 @@ footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px 24px;
+}
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+.hidden {
+  display: none;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

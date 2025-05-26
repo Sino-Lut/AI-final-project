@@ -16,6 +16,10 @@ function generateProduct(event) {
     "You are an expert in describing anti-aging, health and wellness products. Please give me 6 lines in your description. I want 6 lines only ";
   let prompt = `Generate product description about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let productElement = document.querySelector("#product");
+  productElement.classList.remove("hidden");
+  productElement.innerHTML = `<div class="blink">⏳Generating product description about ${instructionsInput.value}</div>`;
+
   axios.get(apiUrl).then(displayProduct);
 }
 
