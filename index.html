@@ -3,17 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Production Generator</title>
   </head>
   <body>
-    <h1>AI Production Description Generator</h1>
+    <div class="container">
+      <header>
+        <h1>AI Product Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the name of the product"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Sino-Lut" target="_blank">
-        Sinomhlobo Lutya</a
-      >
-      and is open-sourced on GitHub and is hosted on Netlify
-    </footer>
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="product">Product details</div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Sino-Lut" target="_blank">
+          Sinomhlobo Lutya</a
+        >
+        and is
+        <a href="https://github.com/Sino-Lut/AI-final-project" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://productdescriptiongenerator.netlify.app/"
+          target="_blank"
+        >
+          hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
